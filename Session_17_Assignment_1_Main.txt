@@ -1,0 +1,45 @@
+Give a brief elaboration of the below questions.
+
+1. Give a brief difference between HBASE and HDFS.
+
+Answer:
+HDFS allows you store huge amounts of data in a distributed and redundant manner.
+HBase is a NoSQL database that runs on top your Hadoop cluster and provides you random real-time read/write access to your data
+
+
+2. List the main components of HBASE.
+Answer:
+HMaster
+Region Server
+Zookeeper
+
+3. Does Hbase support sql?
+Answer: Yes
+
+4. When should we use HBASE, list some of the scenarios for the same.
+
+Answer: 
+
+to perform rendom read and write access
+real-time querying of Big Data
+
+5. What are the different modes in which Hbase can be run?
+
+Answer:
+Standalone
+Distributed
+
+6. Why is zookeeper needed in Hbase?
+Answer:
+A distributed HBase relies completely on Zookeeper for cluster configuration and management. 
+In Apache HBase, ZooKeeper coordinates, communicates, and shares state between the Masters and RegionServers.
+
+8 Hbase is a schema less database, what does it mean?
+Answer: It is not bound to any column structures. We can add as many columns as we want
+
+
+9 What is the minimum number of column family every Hbase table should have?
+Answer: 1
+
+10 What is the benefit of using connection pool in Hbase?
+Answer: It supports high-end multithreaded access.

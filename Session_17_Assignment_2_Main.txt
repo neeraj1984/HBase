@@ -1,0 +1,40 @@
+Give a brief elaboration of the below questions.
+
+1. What is the difference between memstore and hfile in HBase?
+
+Answer:
+Memstore is kept in RegionServer main memory, while HFiles are written to HDFS.
+The MemStore is a write buffer where HBase accumulates data in memory before a permanent write.
+The HFile is the underlying storage format for HBase.
+Edits are collected and sorted in memory (using a skip list specifically). HBase calls this the "memstore"
+
+2. Describe compactions in HBase.
+
+Answer: 
+Minor Compaction
+Major Compaction
+
+3. List and explain the logical entities in HBase.
+
+Answer:
+
+4. What will happen if we do not create a row key while inserting the data?
+Answer: It will be created automatically.
+
+
+5. How can filters be applied in HBase and what are the benefits?
+
+Answer:
+It permits you to perform server-side filtering when accessing HBase over Thrift or within the HBase shell.
+
+6. What are the data model operations in hBase?
+
+Answer: Get, Put, Scan, and Delete.
+
+7. How can MapReduce be used with HBase?
+
+Answer: Hbase can be used as a source or target to MapReduce.
+
+8. What is regionserver?
+
+Answer: Region server(s) essentially buffer I/O operations. When accessing data, clients communicate with HBase RegionServers directly
